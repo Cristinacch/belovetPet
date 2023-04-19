@@ -1,0 +1,22 @@
+.bestPrice.big{
+    font-size: 24px;
+    margin-top:12px;
+    font-weight: 600;
+    color: darken(blueviolet, 20%);
+    white-space: nowrap;
+    text-align: center;
+}
+a{
+    h3{
+        &:hover{
+            color: salmon;
+        }
+    }
+}
+.informacion{
+    a{
+        &:hover{
+            color: salmon;
+        }
+    }
+}

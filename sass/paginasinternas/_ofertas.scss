@@ -1,0 +1,27 @@
+@use '../globales/variables' as v;
+@use '../globales/mixin' as m;
+.ofertas{
+    &Productos{
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        @include m.desktop{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .productoSecundario{
+            img{
+                width: 250px;
+                height: 250px;
+                
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 4100px;
+    @include m.tablet{
+        margin-top: 80px ;
+    }
+}

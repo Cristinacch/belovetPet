@@ -1,0 +1,63 @@
+/*AJUSTES RESPONSIVE*/
+/* Esto es para tablet */
+@media only screen and (max-width: 700px) {
+    header {
+        background-color:blueviolet;
+        display: flex;
+        }
+    .product1{
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        width: 55%;
+        }
+    .productos1, .productos2 {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 780px;
+        }
+    main {
+        height: 2620px;
+        }
+    footer{
+        background-color: blueviolet;
+        margin-top: 2280px;
+        }
+    }
+    /* Esto es para movil */
+    @media only screen and (max-width: 400px) {
+    .productos1, .productos2 {
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 366px;
+        }
+    header {
+        background-color: blueviolet;
+        display: flex;
+        }
+    main {
+        height: 2200px;
+        }
+    footer{
+        background-color: blueviolet;
+        margin-top: 5000px;
+        }
+        
+        /* LARGE SIZE */
+    @media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+        }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        }
+    .contact-wrapper > * {
+        padding: 2em;
+        }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+        }
+    }
+      }/*# sourceMappingURL=styles.css.map */

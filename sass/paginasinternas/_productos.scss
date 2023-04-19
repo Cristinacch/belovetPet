@@ -1,0 +1,21 @@
+@use '../globales/' as v;
+@use '../globales/mixin' as m;
+
+.productosLista{
+    @media only screen and (min-width:768px) and (max-width: 1000px){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .producto{
+        padding-bottom: 10px;
+        &:last-of-type{
+            padding-bottom: 0px;
+        }
+        a{
+            margin: 0 auto;
+            background-color: lighten(v.$bviolet, 20%);
+            border-color: lighten(v.$bviolet, 20%);
+        }
+    }
+}

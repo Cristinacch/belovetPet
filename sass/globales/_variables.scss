@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fraseprincipal {
+    text-align: center;
+    font-family: "Poppins";
+    margin-top: 35px;
+}
+
+a:hover {
+    color: salmon;
+}
+/*muestra enlaces activos*/
+.active {
+    color: gold;
+}
+//MEDIA QUERIES
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+//Colores
+$negro: #000;
+$bviolet: blueviolet;

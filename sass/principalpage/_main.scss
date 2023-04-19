@@ -1,0 +1,95 @@
+@use '../globales/variables' as v;
+@use '../globales/mixin' as m;
+main{
+    .carroulsel{
+        
+    }
+    .productosPrincipales{
+        padding-bottom: 20px;
+        border-bottom: 2px solid lighten(v.$bviolet, 40%);
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            padding: 0 20px 0 20px ;
+        }
+        @include m.desktop{
+            padding: 0 ;
+        }
+        .box-banner{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            &-enlace{
+                text-decoration: none;
+                color: #0058a4;
+                h3{
+                    text-align: center;
+                }
+            }
+            @include m.tablet{
+                display: unset;
+                margin: 0;
+            }
+        }
+    }
+    .productosSecundarios{
+        padding-bottom: 40px;
+        border-bottom: 2px solid lighten(blueviolet, 40%);
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+        }
+        @include m.desktop{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
+    }
+    .otrosProductos{
+        margin-top: 40px;
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        @include m.desktop{
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        img{
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px auto;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+            color: #0058a4;
+        }
+    }
+}
+.productoSecundario{
+    display: flex;
+    flex-direction: column;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    H5{
+        font-weight: bold;
+        text-align: center;
+    }
+    a{
+        margin: 0 auto;
+        background-color: lighten(v.$bviolet, 20%);
+        border-color: lighten(v.$bviolet, 20%);
+    }
+}

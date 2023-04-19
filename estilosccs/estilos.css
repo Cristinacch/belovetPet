@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+header {
+  background-color: blueviolet;
+  display: flex;
+}
+header a {
+  color: #ffffff;
+}
+header a .logo {
+  width: 160px;
+}
+header div {
+  flex: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header div nav {
+  width: 100%;
+  margin: auto;
+}
+header div nav li {
+  display: inline-block;
+  padding: 0 14px;
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fraseprincipal {
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 35px;
+}
+
+a:hover {
+  color: salmon;
+}
+
+/*muestra enlaces activos*/
+.active {
+  color: gold;
+}
+
+main .productosPrincipales {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eddefb;
+}
+@media (min-width: 768px) {
+  main .productosPrincipales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  main .productosPrincipales {
+    padding: 0;
+  }
+}
+main .productosPrincipales .box-banner img {
+  display: block;
+  margin: 0 auto;
+}
+main .productosPrincipales .box-banner-enlace {
+  text-decoration: none;
+  color: #0058a4;
+}
+main .productosPrincipales .box-banner-enlace h3 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main .productosPrincipales .box-banner {
+    display: unset;
+    margin: 0;
+  }
+}
+main .productosSecundarios {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #eddefb;
+}
+@media (min-width: 768px) {
+  main .productosSecundarios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  main .productosSecundarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+main .otrosProductos {
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  main .otrosProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  main .otrosProductos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+main .otrosProductos img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px auto;
+}
+main .otrosProductos a {
+  text-align: center;
+  text-decoration: none;
+  color: #0058a4;
+}
+
+.productoSecundario {
+  display: flex;
+  flex-direction: column;
+}
+.productoSecundario img {
+  display: block;
+  margin: 0 auto;
+}
+.productoSecundario H5 {
+  font-weight: bold;
+  text-align: center;
+}
+.productoSecundario a {
+  margin: 0 auto;
+  background-color: #bc85ee;
+  border-color: #bc85ee;
+}
+
+footer {
+  background-color: blueviolet;
+  margin-top: 65px;
+  color: #FFF;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-family: "Poppins";
+}
+footer .h2 {
+  text-align: left;
+  display: flex;
+}
+footer .informacion {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+footer .informacion a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.bestPrice.big {
+  font-size: 24px;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #561493;
+  white-space: nowrap;
+  text-align: center;
+}
+
+a h3:hover {
+  color: salmon;
+}
+
+.informacion a:hover {
+  color: salmon;
+}
+
+/*AJUSTES RESPONSIVE*/
+/* Esto es para tablet */
+@media only screen and (max-width: 700px) {
+  header {
+    background-color: blueviolet;
+    display: flex;
+  }
+  .product1 {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 55%;
+  }
+  .productos1, .productos2 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 780px;
+  }
+  main {
+    height: 2620px;
+  }
+  footer {
+    background-color: blueviolet;
+    margin-top: 2280px;
+  }
+}
+/* Esto es para movil */
+@media only screen and (max-width: 400px) {
+  .productos1, .productos2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    height: 366px;
+  }
+  header {
+    background-color: blueviolet;
+    display: flex;
+  }
+  main {
+    height: 2200px;
+  }
+  footer {
+    background-color: blueviolet;
+    margin-top: 5000px;
+  }
+  /* LARGE SIZE */
+}
+@media only screen and (max-width: 400px) and (min-width: 700px) {
+  body {
+    padding: 0 4em;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .productosLista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+.productosLista .producto {
+  padding-bottom: 10px;
+}
+.productosLista .producto:last-of-type {
+  padding-bottom: 0px;
+}
+.productosLista .producto a {
+  margin: 0 auto;
+  background-color: #bc85ee;
+  border-color: #bc85ee;
+}
+
+@media (min-width: 768px) {
+  .ofertasProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .ofertasProductos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.ofertasProductos .productoSecundario img {
+  width: 250px;
+  height: 250px;
+}
+
+.footer {
+  margin-top: 4100px;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 80px;
+  }
+}
+
+/*Formulario Contacto*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffcfc;
+  color: rgb(7, 0, 0);
+  line-height: 1.6;
+  font-family: "Quicksand", sans-serif;
+  padding: -1 1.5em;
+}
+body .logo {
+  text-align: center;
+  font-size: 3em;
+  color: black;
+}
+body ul {
+  list-style: none;
+  padding: 0;
+}
+body .banner {
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  color: black;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  padding: 1em;
+}
+.contact-wrapper .contact-form {
+  background: #fcfafa;
+}
+
+@media (min-width: 1024px) {
+  .contact-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+.contact-form form .block {
+  grid-column: 1/3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(8, 8, 8);
+  border-bottom: 1px solid rgb(187, 127, 243);
+}
+
+.contact-form form button {
+  background: blueviolet;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: rgba(137, 43, 226, 0.637);
+  color: rgb(247, 241, 245);
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: rgba(137, 43, 226, 0.603);
+}
+
+.contact-info ul, .contact-info h4, .contact-info p {
+  text-align: center;
+  margin: 1 0 1rem 0;
+}
+
+section.direccion {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: -1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blueviolet;
+  border-radius: 1rem;
+  padding: 5rem;
+  line-height: 2.6;
+  align-items: center;
+}
+
+article img {
+  order: -1;
+  align-self: center;
+}
+
+article button {
+  margin-top: auto;
+  background: blueviolet;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 601px) {
+  .main-contacto {
+    height: 900px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .footer-contacto {
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .footer-contacto {
+    margin-top: 100px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.container-servicios {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .container-servicios {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin: 35px auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container-servicios {
+    margin: 20px auto;
+  }
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba 0, 0, 0, 0.4;
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+
+.main-servicios {
+  height: 900px;
+}
+@media (min-width: 768px) {
+  .main-servicios {
+    height: auto;
+  }
+}
+
+.footer-servicios {
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  .footer-servicios {
+    margin-top: 0;
+  }
+}
+
+.main-ubicacion {
+  height: 700px;
+}
+@media (min-width: 768px) {
+  .main-ubicacion {
+    height: auto;
+  }
+}
+
+.footer-ubicacion {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .footer-ubicacion {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,14 @@
+@use '../globales/variables' as v;
+@use '../globales/mixin' as m;
+.main-ubicacion{
+    height: 700px;
+    @include m.tablet{
+        height: auto ;
+    }
+}
+.footer-ubicacion{
+    margin-top: 50px;
+    @include m.tablet{
+        margin-top: 0;
+    }
+}
