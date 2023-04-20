@@ -3,4 +3,4 @@
 [Belovet-GP](https://cristinacch.github.io/belovetPet/)
 
 ### Netlify: 
-[Belovet-Net](https://belovetpet.netlify.app/)
+[Belovet-Net](https://belovetpet.netlify.app)
