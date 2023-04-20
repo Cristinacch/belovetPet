@@ -1,3 +1,6 @@
+@use '../globales/variables' as v;
+@use '../globales/mixin' as m;
+
 footer {
     background-color: blueviolet;
     margin-top: 65px;
@@ -21,5 +24,21 @@ footer {
             color: white;
             text-decoration: none;
         }
+    }
+} 
+
+.footer-index{
+    margin-top: 5000px;
+    @media only screen and (min-width:401px) and (max-width: 630px){
+        margin-top: 4800px;
+    }
+    @media only screen and (min-width:631px) and (max-width: 700px){
+        margin-top: 1220px;
+    }
+    @media only screen and (min-width:701px) and (max-width: 767px){
+        margin-top: 120px;
+    }
+    @include m.tablet{
+        margin-top: 65px;
     }
 }

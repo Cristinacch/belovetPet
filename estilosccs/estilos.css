@@ -171,6 +171,30 @@ footer .informacion a {
   text-decoration: none;
 }
 
+.footer-index {
+  margin-top: 5000px;
+}
+@media only screen and (min-width: 401px) and (max-width: 630px) {
+  .footer-index {
+    margin-top: 4800px;
+  }
+}
+@media only screen and (min-width: 631px) and (max-width: 700px) {
+  .footer-index {
+    margin-top: 1220px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 767px) {
+  .footer-index {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-index {
+    margin-top: 65px;
+  }
+}
+
 .bestPrice.big {
   font-size: 24px;
   margin-top: 12px;
